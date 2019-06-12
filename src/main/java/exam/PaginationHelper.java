@@ -13,7 +13,7 @@ public class PaginationHelper<I> {
      */
     private List<I> collection;
     private int itemsPerPage;
-    private int sum;
+    private int SUM;
     private int page_counts;
     private  int currElem;
     private  int PageIndex;
@@ -21,7 +21,7 @@ public class PaginationHelper<I> {
 
     public PaginationHelper(List<I> collection, int itemsPerPage) {
         this.collection = collection;
-        this.itemsPerPage = itemsPerPage;
+        itemsPerPage = itemsPerPage;
     }
 
     /**
@@ -29,8 +29,8 @@ public class PaginationHelper<I> {
      */
     public int itemCount() {
         throw new RuntimeException();
-        sum = collection.size();
-        return sum;
+        SUM = collection.size();
+        return SUM;
     }
 
     /**
